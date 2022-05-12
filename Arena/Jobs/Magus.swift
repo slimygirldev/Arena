@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Magus.swift
 //  Arena
 //
 //  Created by Lorene Brocourt on 12/05/2022.
@@ -7,8 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
+class Magus {
 
-let game: Game = Game()
-game.start()
-
+    var magusHp: Int = 200
+}

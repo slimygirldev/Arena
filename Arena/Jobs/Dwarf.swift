@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Dwarf.swift
 //  Arena
 //
 //  Created by Lorene Brocourt on 12/05/2022.
@@ -7,8 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
+class Dwarf {
 
-let game: Game = Game()
-game.start()
-
+    var dwarfHp: Int = 50
+}

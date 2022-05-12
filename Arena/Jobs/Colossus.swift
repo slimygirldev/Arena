@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Colossus.swift
 //  Arena
 //
 //  Created by Lorene Brocourt on 12/05/2022.
@@ -7,8 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
+class Colossus {
 
-let game: Game = Game()
-game.start()
-
+    var colossusHp: Int = 300
+}
