@@ -11,3 +11,18 @@ import Foundation
  ex : creatWarrior()
  call one of the fighter class
  */
+func callWarrior() {
+
+}
+
+func callMagus() {
+
+}
+
+func callColossus() {
+
+}
+
+func callDwarf() {
+
+}

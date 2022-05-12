@@ -10,3 +10,18 @@ import Foundation
  content logic to creat weapons
  func creatWeapon()
  */
+func creatSword() {
+
+}
+
+func creatStaff() {
+
+}
+
+func creatFists() {
+
+}
+
+func creatAxe() {
+    
+}
