@@ -6,17 +6,15 @@
 //
 
 import Foundation
-/*
- Player has a Team
- Player has a nickName who must be edited by the player = using readline()
- init the Team
- func creatTeam()
- 
- */
-class Player {
-      var nickName: String = ""
 
-    init() {
+class Player {
+    var nickName: String = ""
+    var playerTeam: Team
+    var factoGuild: Guild
+
+    init(factoGuild: Guild) {
+        self.factoGuild = factoGuild
+        playerTeam = Team(guild: factoGuild)
 
     }
 
@@ -29,16 +27,10 @@ class Player {
             nickName = unwrappedName
             print("Thank you \(unwrappedName). Welcome to the Arene ! \n")
 
+            //ajouter une loop pour vérifier que les deux noms soient différents et comportent au moins 1 caractere
         }
-//        print("Please tape your name and press Enter to validate :")
-//        if nickName = readLine() {
-//            print("Thank you \(nickName), welcome to the Arena.")
-//        } else {
-//            print("You have to gave me a name to access the Arena.")
-//        }
-
     }
-    private func creatTeam() {
-        
+    func summonTeam() {
+        playerTeam.creatTeam()
     }
 }

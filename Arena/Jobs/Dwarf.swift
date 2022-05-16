@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Dwarf {
+class Dwarf: Character {
 
     var dwarfHp: Int = 50
 }
