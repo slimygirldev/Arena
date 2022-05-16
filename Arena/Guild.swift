@@ -13,26 +13,28 @@ import Foundation
  call one of the fighter class
  */
 
-// MARK: - creat a wwarrior
+class Guild {
+    // MARK: - creat a wwarrior
 
-func callWarrior() {
+    func callWarrior() -> Warrior {
+        return Warrior()
+    }
 
-}
+    // MARK: - creat a Magus
 
-// MARK: - creat a Magus
+    func callMagus() -> Magus {
+        return Magus()
+    }
 
-func callMagus() {
+    // MARK: - creat a Colossus
+    
+    func callColossus() -> Colossus {
+        return Colossus()
+    }
 
-}
+    // MARK: - creat a Dwark
 
-// MARK: - creat a Colossus
-
-func callColossus() {
-
-}
-
-// MARK: - creat a Dwark
-
-func callDwarf() {
-
+    func callDwarf() -> Dwarf{
+        return Dwarf()
+    }
 }
