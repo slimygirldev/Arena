@@ -24,20 +24,4 @@ class Character {
     init() {
         
     }
-    func nameCharacter() {
-        print("What is the name of your fighter ?")
-        var name: String? = readLine()
-
-
-        if let unwrappedName = name {
-            characterName = unwrappedName
-            print("The fighter \(unwrappedName) enter your team ! \n")
-
-        }
-}
-
-
-
-
-
 }
