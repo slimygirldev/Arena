@@ -7,8 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+// MARK: - Arena programm circle life
 
 let game: Game = Game()
+
 game.start()
+
 

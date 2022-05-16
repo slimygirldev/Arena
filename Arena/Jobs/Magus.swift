@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Magus {
+class Magus: Character {
 
     var magusHp: Int = 200
+    
 }

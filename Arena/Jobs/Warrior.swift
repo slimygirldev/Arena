@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Warrior {
+class Warrior: Character {
 
     var warriorHp: Int = 100
 }
