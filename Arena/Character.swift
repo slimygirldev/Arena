@@ -7,5 +7,37 @@
 
 import Foundation
 /*
- content nickName
+ content nickName WARNING : adding the fact that you can't name a character twice the same
+ 
+ content function attackTarget()
+ 
+ may be content the Spell function, only access to Magus class = using where statement
+ to define if the choice appears
+
+ content function to pass your turne (optionnal Bonus)
  */
+class Character {
+
+    var characterName: String = ""
+    var characterHp: Int = 0
+
+    init() {
+        
+    }
+    func nameCharacter() {
+        print("What is the name of your fighter ?")
+        var name: String? = readLine()
+
+
+        if let unwrappedName = name {
+            characterName = unwrappedName
+            print("The fighter \(unwrappedName) enter your team ! \n")
+
+        }
+}
+
+
+
+
+
+}

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Colossus {
+class Colossus: Character {
 
     var colossusHp: Int = 300
 }
