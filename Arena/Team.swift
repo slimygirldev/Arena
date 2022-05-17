@@ -47,30 +47,29 @@ class Team {
     Weapon : Axe [20 pts]\n
 """)
         if let choice = readLine() {
-            if choice == "1" {
+            switch choice {
+            case "1" :
                 //factoGuild.callWarrior()
                 characters.append(factoGuild.callWarrior())
                 print("You chose a Warrior ! This is a equilibrate class of fighter.")
 
-            } else if  choice == "2" {
+            case "2" :
                 characters.append(factoGuild.callMagus())
                 print("You chose a Magus. He has the ability to cast a healing spell.")
 
-            } else if choice == "3" {
+            case "3" :
                 characters.append(factoGuild.callColossus())
                 print("You chose the strong Colossus. He can tank a lot of dammages !")
 
-            } else  if choice == "4" {
+            case "4" :
                 characters.append(factoGuild.callDwarf())
                 print("You chose the Dwarf ! He will brings a lot of damages to his target")
 
-            } else {
+             default :
                 print("You can only chose between 1, 2, 3 or 4, please enter a correct answer.")
                 creatTeam() // reccursive call the function again
             }
-
         }
-
     }
 }
 // test func name unicity
