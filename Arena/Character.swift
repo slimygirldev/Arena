@@ -18,8 +18,8 @@ import Foundation
  */
 class Character {
 
-    var characterName: String = ""
-    var characterHp: Int = 0
+    var name: String = ""
+    var hp: Int = 0
 
     init() {
         
