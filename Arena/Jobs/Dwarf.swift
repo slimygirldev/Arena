@@ -9,5 +9,5 @@ import Foundation
 
 class Dwarf: Character {
 
-    var dwarfHp: Int = 50
+ //   var dwarfHp: Int = 50
 }

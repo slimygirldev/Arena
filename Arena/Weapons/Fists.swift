@@ -9,7 +9,7 @@ import Foundation
 /*
  Fists is the weapon class of the Colossus Job
  */
-class Fists {
+class Fists: Weapon {
 
-    var fistsDamages: Int = 5
+ //   var fistsDamages: Int = 5
 }

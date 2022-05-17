@@ -9,7 +9,7 @@ import Foundation
 /*
  Sword is the Warrior weapon
  */
-class Sword {
+class Sword: Weapon {
     
-    var swordDamages: Int = 10
+ //   var swordDamages: Int = 10
 }

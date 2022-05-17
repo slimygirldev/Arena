@@ -9,5 +9,5 @@ import Foundation
 
 class Warrior: Character {
 
-    var warriorHp: Int = 100
+//    var warriorHp: Int = 100
 }

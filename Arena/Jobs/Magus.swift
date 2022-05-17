@@ -9,6 +9,6 @@ import Foundation
 
 class Magus: Character {
 
-    var magusHp: Int = 200
+ //   var magusHp: Int = 200
     
 }
