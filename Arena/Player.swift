@@ -31,6 +31,6 @@ class Player {
         }
     }
     func summonTeam() {
-        playerTeam.creatTeam()
+        playerTeam.createTeam()
     }
 }
