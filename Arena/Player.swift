@@ -33,4 +33,7 @@ class Player {
     func summonTeam() {
         playerTeam.createTeam()
     }
+    func showTeamInfo() {
+        print(nickName)
+    }
 }
