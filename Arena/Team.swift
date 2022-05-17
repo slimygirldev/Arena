@@ -22,25 +22,29 @@ class Team {
     }
 
     func createTeam() {
-        selectJob()
- //       nameCharacter()
+        var i: Int = 0
+        while (i <= 2) {
+            callCharacter()
+            i = i + 1
+        }
+//Character name + job
     }
 
     func nameCharacter(member: Character) {
-            var characterNickname: String = ""
+        var characterNickname: String = ""
 
-            print("What's his name ?")
-            var name: String? = readLine()
+        print("What's his name ?")
+        var name: String? = readLine()
 
-            if let unwrappedName = name {
-                print("Welcome in the Team \(unwrappedName)! \n")
-                member.name = unwrappedName
-            }
-
+        if let unwrappedName = name {
+            print("Welcome in the Team \(unwrappedName)! \n")
+            member.name = unwrappedName
         }
 
-        func selectJob() {
-            print("""
+    }
+
+    func callCharacter() {
+        print("""
 It is time to creat your team of mighty heroes who will fight in your name !\n
 Chose the Job of your first fighter : \n
 1 . Warrior [HP: 100/100]
@@ -52,62 +56,62 @@ Chose the Job of your first fighter : \n
 4 . Dwarf [HP: 75/75]
     Weapon : Axe [20 pts]\n
 """)
-            if let choice = readLine() {
-                var teamMember: Character
+        if let choice = readLine() {
+            var teamMember: Character
 
-                switch choice {
-                case "1" :
-                    //factoGuild.callWarrior()
-                    teamMember = factoGuild.callWarrior()
-                    characters.append(teamMember)
-                    print("You chose a Warrior ! This is a equilibrate class of fighter.")
-                    nameCharacter(member: teamMember)
-                case "2" :
-                    teamMember = factoGuild.callMagus()
-                    characters.append(teamMember)
-                    print("You chose a Magus. He has the ability to cast a healing spell.")
-                    nameCharacter(member: teamMember)
+            switch choice {
+            case "1" :
+                //factoGuild.callWarrior()
+                teamMember = factoGuild.callWarrior()
+                characters.append(teamMember)
+                print("You chose a Warrior ! This is a equilibrate class of fighter.")
+                nameCharacter(member: teamMember)
+            case "2" :
+                teamMember = factoGuild.callMagus()
+                characters.append(teamMember)
+                print("You chose a Magus. He has the ability to cast a healing spell.")
+                nameCharacter(member: teamMember)
 
-                case "3" :
-                    teamMember = factoGuild.callColossus()
-                    characters.append(teamMember)
-                    print("You chose the strong Colossus. He can tank a lot of dammages !")
-                    nameCharacter(member: teamMember)
+            case "3" :
+                teamMember = factoGuild.callColossus()
+                characters.append(teamMember)
+                print("You chose the strong Colossus. He can tank a lot of dammages !")
+                nameCharacter(member: teamMember)
 
-                case "4" :
-                    teamMember = factoGuild.callDwarf()
-                    characters.append(teamMember)
-                    print("You chose the Dwarf ! He will brings a lot of damages to his target")
-                    nameCharacter(member: teamMember)
+            case "4" :
+                teamMember = factoGuild.callDwarf()
+                characters.append(teamMember)
+                print("You chose the Dwarf ! He will brings a lot of damages to his target")
+                nameCharacter(member: teamMember)
 
-                default :
-                    print("You can only chose between 1, 2, 3 or 4, please enter a correct answer.")
-                    selectJob() // reccursive call the function again
-                }
+            default :
+                print("You can only chose between 1, 2, 3 or 4, please enter a correct answer.")
+                callCharacter() // reccursive call the function again
             }
         }
     }
+}
 
 /*
-    func nameCharacter() {
+ func nameCharacter() {
 
-        var characters: [Character]
-        var characterName: String = ""
-        print("What's is name?")
+ var characters: [Character]
+ var characterName: String = ""
+ print("What's is name?")
 
-        while let characterName = readLine() {
-            guard characterName != "quit" else {
-                break
-            }
-            if !characters.contains(characterName) {
-                characters.append(characterName)
-                print("Your name is \(characterName)")
-            } else {
-                print("Negative. \"\(characterName)\" already exits")
-            }
-            print("Enter a new name :")
-            nameCharacter()
-        }
-*/
+ while let characterName = readLine() {
+ guard characterName != "quit" else {
+ break
+ }
+ if !characters.contains(characterName) {
+ characters.append(characterName)
+ print("Your name is \(characterName)")
+ } else {
+ print("Negative. \"\(characterName)\" already exits")
+ }
+ print("Enter a new name :")
+ nameCharacter()
+ }
+ */
 
 
