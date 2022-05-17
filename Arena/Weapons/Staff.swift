@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Staff {
+class Staff: Weapon {
 
-    var staffDamages: Int = 2
+//    var staffDamages: Int = 2
 }

@@ -9,7 +9,7 @@ import Foundation
 /*
  Axe is the Dwarf weapon
  */
-class Axe {
+class Axe: Weapon {
 
-    var axeDamages: Int = 20
+//    var axeDamages: Int = 20
 }
