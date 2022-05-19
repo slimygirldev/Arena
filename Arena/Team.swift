@@ -37,24 +37,23 @@ class Team {
         var name: String? = readLine()
 
         if let unwrappedName = name {
-            print("Welcome in the Team \(unwrappedName)! \n")
+            print("\(unwrappedName) joins you !\n")
             member.name = unwrappedName
+            print()
         }
 
     }
 
     func callCharacter() {
         print("""
-It is time to creat your team of mighty heroes who will fight in your name !\n
-Chose the Job of your first fighter : \n
-1 . Warrior [HP: 100/100]
-    Weapon : Sword [10 pts]\n
-2 . Magus [HP: 200/200]
-    Weapon : Staff [4 pts]\n
+1 . Warrior [HP: 100 - 175]
+    💥 Sword [10 - 15 pts]\n
+2 . Magus [HP: 200 - 275]
+    💥 Staff [2 - 4 pts]\n
 3 . Colossus [HP: 300/300]
-    Weapon : Fists [7 pts]\n
-4 . Dwarf [HP: 75/75]
-    Weapon : Axe [20 pts]\n
+    💥 Fists [4 - 7 pts]\n
+4 . Dwarf [HP: 50 - 75]
+    💥 Axe [20 - 27 pts]\n
 """)
         if let choice = readLine() {
             var teamMember: Character
@@ -64,28 +63,28 @@ Chose the Job of your first fighter : \n
                 //factoGuild.callWarrior()
                 teamMember = factoGuild.callWarrior()
                 characters.append(teamMember)
-                print("You chose a Warrior ! This is a equilibrate class of fighter.")
+                print("You chose a Warrior ! This is a equilibrate class of fighter.\n")
                 nameCharacter(member: teamMember)
             case "2" :
                 teamMember = factoGuild.callMagus()
                 characters.append(teamMember)
-                print("You chose a Magus. He has the ability to cast a healing spell.")
+                print("You chose a Magus. He has the ability to cast a healing spell.\n")
                 nameCharacter(member: teamMember)
 
             case "3" :
                 teamMember = factoGuild.callColossus()
                 characters.append(teamMember)
-                print("You chose the strong Colossus. He can tank a lot of dammages !")
+                print("You chose the strong Colossus. He can tank a lot of dammages !\n")
                 nameCharacter(member: teamMember)
 
             case "4" :
                 teamMember = factoGuild.callDwarf()
                 characters.append(teamMember)
-                print("You chose the Dwarf ! He will brings a lot of damages to his target")
+                print("You chose the Dwarf ! He will brings a lot of damages to his target\n")
                 nameCharacter(member: teamMember)
 
             default :
-                print("You can only chose between 1, 2, 3 or 4, please enter a correct answer.")
+                print("You can only chose between 1, 2, 3 or 4, please enter a correct answer.\n")
                 callCharacter() // reccursive call the function again
             }
         }

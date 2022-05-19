@@ -9,5 +9,7 @@ import Foundation
 
 class Dwarf: Character {
 
- //   var dwarfHp: Int = 50
+    override var hp: Int {
+        return Int.random(in: 50...75)
+    }
 }

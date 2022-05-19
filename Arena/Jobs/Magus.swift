@@ -9,6 +9,8 @@ import Foundation
 
 class Magus: Character {
 
- //   var magusHp: Int = 200
+    override var hp: Int {
+        return Int.random(in: 200...275)
+    }
     
 }

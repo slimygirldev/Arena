@@ -11,5 +11,7 @@ import Foundation
  */
 class Sword: Weapon {
     
- //   var swordDamages: Int = 10
+    override var damages: Int {
+        return Int.random(in: 10...15)
+    }
 }

@@ -9,5 +9,11 @@ import Foundation
 
 class Warrior: Character {
 
-//    var warriorHp: Int = 100
+    override var hp: Int {
+        return Int.random(in: 100...175)
+    }
+
+//    override init() {
+//        Int.random(in: 100...175)
+//    }
 }

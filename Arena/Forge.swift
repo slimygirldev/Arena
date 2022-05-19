@@ -15,25 +15,25 @@ import Foundation
 class Forge {
     // MARK: - Swork creation
     
-    func creatSword() {
-        
+    func createSword() -> Sword{
+        return Sword()
     }
     
     // MARK: - Staff creation
     
-    func creatStaff() {
-        
+    func createStaff() -> Staff{
+        return Staff()
     }
     
     // MARK: - Fists creation
     
-    func creatFists() {
-        
+    func createFists() -> Fists {
+        return Fists()
     }
     
     // MARK: - Axe creation
     
-    func creatAxe() {
-        
+    func createAxe() -> Axe {
+        return Axe()
     }
 }

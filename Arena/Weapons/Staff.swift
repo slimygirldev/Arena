@@ -9,5 +9,7 @@ import Foundation
 
 class Staff: Weapon {
 
-//    var staffDamages: Int = 2
+    override var damages: Int {
+        return Int.random(in: 2...4)
+    }
 }

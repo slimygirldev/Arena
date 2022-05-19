@@ -8,6 +8,11 @@
 import Foundation
 
 class Weapon {
+
     var name: String = ""
-    var damages: Int = 0
+    // randomize damages at creation of the weapon
+    var damages: Int {
+        return 0
+
+    }
 }

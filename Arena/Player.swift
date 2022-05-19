@@ -11,29 +11,41 @@ class Player {
     var nickName: String = ""
     var playerTeam: Team
     var factoGuild: Guild
+    var names: [String]
 
-    init(factoGuild: Guild) {
+    init(factoGuild: Guild, names: [String]) {
+        self.names = names
         self.factoGuild = factoGuild
         playerTeam = Team(guild: factoGuild)
-
     }
 
     func choseName() {
-        print("What is your name?")
-        var name: String? = readLine()
-
-
-        if let unwrappedName = name {
-            nickName = unwrappedName
-            print("Thank you \(unwrappedName). Welcome to the Arene ! \n")
-
-            //ajouter une loop pour vérifier que les deux noms soient différents et comportent au moins 1 caractere
+        print("What is your name?\n")
+        print("➡️ :", terminator: " ")
+        while let name = readLine() {
+            if names.contains(name) == false {
+                names.append(name)
+                print("You entered: \(name)")
+                break
+            } else {
+                print("Negative. \"\(name)\" already exits")
+            }
         }
     }
+
+
+
     func summonTeam() {
         playerTeam.createTeam()
     }
-    func showTeamInfo() {
-        print(nickName)
+    func printSummary() {
+        print("""
+        Resume of the teams : \n
+        Team of \(self.nickName) :
+        1 . \(self.playerTeam.characters[0].name)
+            \(type(of:playerTeam.characters[0])) [\(playerTeam.characters[0].hp)HP]
+        2 . \(self.playerTeam.characters[1].name)
+        3 . \(self.playerTeam.characters[2].name)
+        """)
     }
 }
