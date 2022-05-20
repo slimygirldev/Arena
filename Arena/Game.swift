@@ -30,6 +30,7 @@ class Game {
     var playerOne: Player
     var playerTwo: Player
     var factoGuild: Guild
+    static var uniqname: [String] = []
     
     init() {
         factoGuild = Guild()
@@ -46,17 +47,26 @@ class Game {
     
     func initPlayers() {
         playerOne.choseName()
-        print("Now it's your turn, come closer and register your name too. \n")
+        print("Now, let your rival register his name too. \n")
         playerTwo.choseName()
+        print("Perfect !\n")
+        print("You can now pick fighters to create your Team\nGo on \(playerOne.nickName), chose wisely: \n")
         playerOne.summonTeam()
+        print("===========")
+        print("It's your turn \(playerTwo.nickName)\nChose your team members : \n")
+        print("===========")
+        playerTwo.summonTeam()
+        print("Your teams are complete. \n Take a look at your opponents before entering the Arena.")
+        playerOne.printSummary()
+        playerTwo.printSummary()
+
     }
-    
     
     func welcome() {
         print("""
 Welcome to the Arena !! \n
-The holy place where mighty warrios fight for the title of King of Fighters !
-Here you must defeat your opponent in a team battle.
+The holy place where mighty warriors fight for the title of King of Fighters !
+Here you must defeat your rival in a team battle.
 To enter the next round of the Arena's tournament you must register your name ! \n
 """)
     }

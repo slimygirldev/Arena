@@ -11,5 +11,10 @@ import Foundation
  */
 class Fists: Weapon {
 
- //   var fistsDamages: Int = 5
+    override var name: String {
+        return "Fists"
+    }
+    override var damages: Int {
+        return Int.random(in: 4...7)
+    }
 }

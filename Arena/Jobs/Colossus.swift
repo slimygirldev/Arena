@@ -9,5 +9,7 @@ import Foundation
 
 class Colossus: Character {
 
-//    var colossusHp: Int = 300
+    override var hp: Int {
+        return Int.random(in: 300...375)
+    }
 }

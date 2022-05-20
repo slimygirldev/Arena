@@ -10,6 +10,10 @@ import Foundation
  Axe is the Dwarf weapon
  */
 class Axe: Weapon {
-
-//    var axeDamages: Int = 20
+    override var name: String {
+        return "Axe"
+    }
+    override var damages: Int {
+        return Int.random(in: 20...27)
+    }
 }

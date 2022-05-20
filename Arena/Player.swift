@@ -15,25 +15,43 @@ class Player {
     init(factoGuild: Guild) {
         self.factoGuild = factoGuild
         playerTeam = Team(guild: factoGuild)
-
     }
 
     func choseName() {
-        print("What is your name?")
-        var name: String? = readLine()
+        print("===========")
+        print("What is your name?\n")
+        print("➡️ :", terminator: " ")
 
-
-        if let unwrappedName = name {
-            nickName = unwrappedName
-            print("Thank you \(unwrappedName). Welcome to the Arene ! \n")
-
-            //ajouter une loop pour vérifier que les deux noms soient différents et comportent au moins 1 caractere
+        while let name = readLine() {
+            if Game.uniqname.contains(name) == false {
+                Game.uniqname.append(name)
+                nickName = name
+                break
+            } else {
+                print("Negative. \"\(name)\" already exits. \nEnter another name. \n➡️ :", terminator: " ")
+            }
         }
     }
+
     func summonTeam() {
         playerTeam.createTeam()
     }
-    func showTeamInfo() {
-        print(nickName)
+    func printSummary() {
+        print("""
+        Resume of the teams : \n
+        ===========
+        Team of \(self.nickName) :
+        1 . \(self.playerTeam.characters[0].name)
+            \(type(of: playerTeam.characters[0])) [\(playerTeam.characters[0].hp)HP]
+            \(type(of: playerTeam.characters[0].weapon))
+        2 . \(self.playerTeam.characters[1].name)
+            \(type(of: playerTeam.characters[1])) [\(playerTeam.characters[1].hp)HP]
+            \(type(of: playerTeam.characters[1].weapon))
+        3 . \(self.playerTeam.characters[2].name)
+            \(type(of: playerTeam.characters[2])) [\(playerTeam.characters[2].hp)HP]
+            \(type(of: playerTeam.characters[2].weapon))
+        ===========
+        """)
+        // FIXME: implement a loop to avoid repetition
     }
 }

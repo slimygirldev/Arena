@@ -10,6 +10,11 @@ import Foundation
  Sword is the Warrior weapon
  */
 class Sword: Weapon {
-    
- //   var swordDamages: Int = 10
+
+    override var name: String {
+        return "Sword"
+    }
+    override var damages: Int {
+        return Int.random(in: 10...15)
+    }
 }
