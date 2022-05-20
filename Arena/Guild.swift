@@ -19,6 +19,7 @@ class Guild {
     var forge: Forge = Forge()
 
     func callWarrior() -> Warrior {
+        //on peut ajouter la logic de random ic : Int.random(in: 200...275), warrior fera appelle à la hp à sa création
         return Warrior(weapon: forge.createSword())
     }
 

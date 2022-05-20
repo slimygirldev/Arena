@@ -23,6 +23,7 @@
 		980293AD282D94A5009C2579 /* Fists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980293AC282D94A5009C2579 /* Fists.swift */; };
 		980293AF282D94FB009C2579 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980293AE282D94FB009C2579 /* Axe.swift */; };
 		98751C8E28343C6B00669B45 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98751C8D28343C6B00669B45 /* Weapon.swift */; };
+		98751C902837CC2000669B45 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98751C8F2837CC2000669B45 /* Statistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		980293AC282D94A5009C2579 /* Fists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fists.swift; sourceTree = "<group>"; };
 		980293AE282D94FB009C2579 /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
 		98751C8D28343C6B00669B45 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		98751C8F2837CC2000669B45 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				9802939C282D91F5009C2579 /* Guild.swift */,
 				980293A9282D9433009C2579 /* Weapons */,
 				980293A4282D938E009C2579 /* Jobs */,
+				98751C8F2837CC2000669B45 /* Statistics.swift */,
 			);
 			path = Arena;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				980293A1282D9278009C2579 /* Magus.swift in Sources */,
 				98029395282D8EA0009C2579 /* Player.swift in Sources */,
 				9802939F282D9267009C2579 /* Warrior.swift in Sources */,
+				98751C902837CC2000669B45 /* Statistics.swift in Sources */,
 				980293AB282D947E009C2579 /* Staff.swift in Sources */,
 				98751C8E28343C6B00669B45 /* Weapon.swift in Sources */,
 				98029393282D8BDB009C2579 /* Game.swift in Sources */,

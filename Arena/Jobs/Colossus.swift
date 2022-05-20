@@ -9,7 +9,16 @@ import Foundation
 
 class Colossus: Character {
 
-    override var hp: Int {
-        return Int.random(in: 300...375)
+    var pv: Int
+
+    override var maxHp: Int {
+        return pv
     }
+
+    override init(weapon: Weapon) {
+        let hp: Int = Int.random(in: 100...175)
+        pv = hp
+        super.init(weapon: weapon)
+    }
+
 }

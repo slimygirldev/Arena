@@ -9,11 +9,16 @@ import Foundation
 
 class Warrior: Character {
 
-    override var hp: Int {
-        return Int.random(in: 100...175)
+    var pv: Int
+
+    override var maxHp: Int {
+        return pv
     }
 
-//    override init() {
-//        Int.random(in: 100...175)
-//    }
+    override init(weapon: Weapon) {
+        let hp: Int = Int.random(in: 100...175)
+        pv = hp
+        super.init(weapon: weapon)
+    }
+
 }
