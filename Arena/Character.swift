@@ -16,13 +16,9 @@ class Character {
 
     var name: String = ""
 
-    // hp who gonna change during fight
-    var currentHp: Int {
-        return 0
-    }
-
-    //max hp of character
-    var hp: Int {
+    var currentHp: Int = 0
+    
+    var maxHp: Int {
         return 0
     }
 

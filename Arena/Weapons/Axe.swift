@@ -13,6 +13,7 @@ class Axe: Weapon {
     override var name: String {
         return "Axe"
     }
+
     override var damages: Int {
         return Int.random(in: 20...27)
     }

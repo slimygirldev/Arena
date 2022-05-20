@@ -42,13 +42,13 @@ class Player {
         ===========
         Team of \(self.nickName) :
         1 . \(self.playerTeam.characters[0].name)
-            \(type(of: playerTeam.characters[0])) [\(playerTeam.characters[0].hp)HP]
+            \(type(of: playerTeam.characters[0])) [\(playerTeam.characters[0].maxHp)HP]
             \(type(of: playerTeam.characters[0].weapon))
         2 . \(self.playerTeam.characters[1].name)
-            \(type(of: playerTeam.characters[1])) [\(playerTeam.characters[1].hp)HP]
+            \(type(of: playerTeam.characters[1])) [\(playerTeam.characters[1].maxHp)HP]
             \(type(of: playerTeam.characters[1].weapon))
         3 . \(self.playerTeam.characters[2].name)
-            \(type(of: playerTeam.characters[2])) [\(playerTeam.characters[2].hp)HP]
+            \(type(of: playerTeam.characters[2])) [\(playerTeam.characters[2].maxHp)HP]
             \(type(of: playerTeam.characters[2].weapon))
         ===========
         """)
