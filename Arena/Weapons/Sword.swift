@@ -10,11 +10,15 @@ import Foundation
  Sword is the Warrior weapon
  */
 class Sword: Weapon {
-
+    
     override var name: String {
         return "Sword"
     }
     override var damages: Int {
-        return Int.random(in: 10...15)
+        let smash: Int = Int.random(in: 10...30)
+        if smash == 30 {
+            print("CRITICAL HIT")
+        }
+        return smash
     }
 }

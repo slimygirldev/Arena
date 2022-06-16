@@ -97,9 +97,9 @@
 				98751C8D28343C6B00669B45 /* Weapon.swift */,
 				9802939A282D90EA009C2579 /* Forge.swift */,
 				9802939C282D91F5009C2579 /* Guild.swift */,
+				98751C8F2837CC2000669B45 /* Statistics.swift */,
 				980293A9282D9433009C2579 /* Weapons */,
 				980293A4282D938E009C2579 /* Jobs */,
-				98751C8F2837CC2000669B45 /* Statistics.swift */,
 			);
 			path = Arena;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					98029387282D76A6009C2579 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -323,6 +323,7 @@
 		98029390282D76A6009C2579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB34966X5M;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -334,6 +335,7 @@
 		98029391282D76A6009C2579 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB34966X5M;
 				ENABLE_HARDENED_RUNTIME = YES;

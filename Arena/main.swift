@@ -11,21 +11,6 @@ import Foundation
 
 let game: Game = Game()
 
-//game.start()
-var arme: Sword = Sword()
+game.start()
 
-var fifi: Warrior = Warrior(weapon: arme)
-var riri: Warrior = Warrior(weapon: arme)
-var lolo: Warrior = Warrior(weapon: arme)
 
-print(fifi.maxHp)
-print(fifi.maxHp)
-print(fifi.maxHp)
-
-print(riri.maxHp)
-print(riri.maxHp)
-print(riri.maxHp)
-
-print(lolo.maxHp)
-print(lolo.maxHp)
-print(lolo.maxHp)
