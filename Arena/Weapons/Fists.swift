@@ -10,11 +10,15 @@ import Foundation
  Fists is the weapon class of the Colossus Job
  */
 class Fists: Weapon {
-
+    
     override var name: String {
         return "Fists"
     }
     override var damages: Int {
-        return Int.random(in: 4...7)
+        let smash: Int = Int.random(in: 7...15)
+        if smash == 15 {
+            print("CRITICAL HIT")
+        }
+        return smash
     }
 }

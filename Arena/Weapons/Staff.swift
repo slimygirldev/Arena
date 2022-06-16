@@ -12,6 +12,10 @@ class Staff: Weapon {
         return "Staff"
     }
     override var damages: Int {
-        return Int.random(in: 2...4)
+        let smash: Int = Int.random(in: 4...7)
+        if smash == 7 {
+            print("CRITICAL HIT")
+        }
+        return smash
     }
 }

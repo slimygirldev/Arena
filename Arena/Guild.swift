@@ -6,20 +6,14 @@
 //
 
 import Foundation
-/*
- is the Factory of the chracters
- creat a sort of fighter
- ex : creatWarrior()
- call one of the fighter class
- */
 
 class Guild {
+    // declaraction of a Forge to give a weapon to character jobs
+    private var forge: Forge = Forge()
+
     // MARK: - creat a wwarrior
 
-    var forge: Forge = Forge()
-
     func callWarrior() -> Warrior {
-        //on peut ajouter la logic de random ic : Int.random(in: 200...275), warrior fera appelle à la hp à sa création
         return Warrior(weapon: forge.createSword())
     }
 
